@@ -21,3 +21,10 @@ cd api-productos
 ## Nota
 
 # en la raiz del proyecto hay un json llamado coleccion_prueba.json que se puede importar para utilizarlo en postman
+
+## IMAGENES
+
+![image](https://github.com/user-attachments/assets/046e125c-7d18-4145-b570-773b88851afa)
+
+![image](https://github.com/user-attachments/assets/163ffe3e-fc17-44cb-86cf-2b8a62690a18)
+
