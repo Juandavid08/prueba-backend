@@ -1,0 +1,98 @@
+{
+  "info": {
+    "name": "API Productos - NestJS",
+    "_postman_id": "e58fd2ab-942f-41f8-b3f3-9fd20e2d274c",
+    "description": "Colección para probar los endpoints CRUD del recurso productos en NestJS",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Crear producto",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"nombre\": \"Laptop Lenovo\",\n  \"precio\": 1999.99,\n  \"stock\": 12\n}"
+        },
+        "url": {
+          "raw": "http://localhost:3000/productos",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "3000",
+          "path": ["productos"]
+        }
+      }
+    },
+    {
+      "name": "Obtener todos los productos",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:3000/productos",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "3000",
+          "path": ["productos"]
+        }
+      }
+    },
+    {
+      "name": "Obtener producto por ID",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:3000/productos/{{id_producto}}",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "3000",
+          "path": ["productos", "{{id_producto}}"]
+        }
+      }
+    },
+    {
+      "name": "Actualizar producto",
+      "request": {
+        "method": "PATCH",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"stock\": 25\n}"
+        },
+        "url": {
+          "raw": "http://localhost:3000/productos/{{id_producto}}",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "3000",
+          "path": ["productos", "{{id_producto}}"]
+        }
+      }
+    },
+    {
+      "name": "Eliminar producto",
+      "request": {
+        "method": "DELETE",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:3000/productos/{{id_producto}}",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "3000",
+          "path": ["productos", "{{id_producto}}"]
+        }
+      }
+    }
+  ]
+}
